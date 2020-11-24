@@ -1,0 +1,622 @@
+:root{
+    --color-white: white;
+    --color-grey: grey;
+    --color-blue: rgb(70, 70, 247);
+    --color-orange: rgb(249, 130, 108);
+    --color-black: #24292e;
+    --color-lightgrey: #d1d5da;
+    --color-textlink: #0366d6;
+    --color-rightbody-textgrey:#586069;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    /* font-family: Montserrat; */
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    padding: 15px 25px;
+
+}
+
+.octicon-mark-github{
+    fill: white;
+    margin-right: 20px;
+}
+
+.menu{
+    display: flex;
+    font-weight: 300;
+}
+
+.menu li{
+    list-style-type: none;
+    margin-right: 14px;
+    font-weight: 600;
+    padding-top: 8px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.nav__left{
+    color: var(--color-white);
+    display: flex;
+}
+
+.nav__left input{
+    margin-right: 1em;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 2px;
+    width: 290px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+p{
+    margin-right: 1em;
+}
+
+.nav__right{
+    display: flex;
+}
+
+.nav__right div{
+    margin-top: 8px;
+    width: 23px;
+    display: flex;
+    margin-right: 13px;
+}
+
+
+.nav__right svg{
+    fill: white;
+    height:20px;
+}
+
+.dropdown-caret {
+    color: white;
+    display: flex;
+    position: relative;
+    width: 0px;
+    height: 0px;
+    margin-top: 8px;
+    vertical-align: middle;
+    content: "";
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-right: 4px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.nav__right img{
+    height: 20px;
+    border-radius:  50%;
+    
+}
+
+.mobilenav{
+    display: none;
+}
+
+.bio-status{
+    display: none;
+}
+
+/* header */
+.header{
+    border-bottom: 1px solid var(--color-grey);
+    padding: 0px 0;
+    position: sticky;
+}
+
+ /* .fixed-top{
+    position: sticky;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+} */
+
+.header_wrapper{
+    display: flex;
+    max-width: 626px;
+    margin: 0 auto;
+}
+
+.header_wrapper p{
+    font-size: 14px;
+    color: var(--color-grey);
+    /* padding: 8px 16px; */
+}
+
+.header_wrapper span{
+    padding: 19px 16px;
+    color: var(--color-grey);
+}
+.header_wrapper svg{
+    margin-right: 7px;
+}
+
+.overview, .repository, .projects, .packages{
+    margin-right: 5px;
+    display: flex;
+}
+
+.repository a{
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.repository span{
+    /* border: 1px solid var(--color-grey); */
+    border-radius: 25%;
+    padding:3px;
+    margin-left: 4px;
+    font-size: 12px;
+    background-color: var(--color-lightgrey);
+}
+
+.repository{
+    border-bottom: 2px solid var(--color-orange);
+    z-index: 2px;
+}
+
+/* Rest of the body */
+.body_left{
+    /* width: 200px; */
+    /* height: 200px; */
+    flex-basis: 30%;
+    /* background-color: var(--color-orange); */
+}
+
+.avatar{
+    width:260px;
+    height:260px;
+    border-radius: 50% !important;
+    position: relative;
+}
+
+.status{
+    position: absolute;
+    top: 300px;
+   left: 308px;
+    padding: 8px;
+    background-color: white;
+    border:1px solid var(--color-lightgrey);
+    border-radius: 60%;
+}
+
+.status svg{
+    height: 20px;
+    width:20px;
+}
+
+.fullname, .username{
+    display: block;
+}
+
+.fullname{
+    font-size: 26px;
+}
+
+.username{
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--color-grey);
+}
+
+.bio{
+    margin: 7px 0;
+}
+
+.bio p{
+    font-size: 16px;
+    padding: 7px 0;
+}
+
+.body_left button{
+    padding: 7px 72px;
+    border-radius: 8px;
+    border: 1px solid var(--color-lightgrey);
+}
+
+.card1{
+    margin: 12px 0;
+}
+
+.card1 a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.card1 span{
+    font-size: 14px;
+}
+
+.card2, .card3{
+    padding: 17px 0;
+    border-bottom: 1px solid var(--color-lightgrey) ;
+    width: 250px;
+}
+.card2 li{
+    list-style-type: none;
+    display: flex;
+    margin: 9px 0;
+}
+
+.card2 p{
+margin-left: 5px;
+font-size: 14px
+}
+.card2 p, .bio p{
+    color: var(--color-black);
+}
+
+
+.octicon-twitter{
+    height: 18px;
+    color:#6a737d;
+}
+
+.card3 span{
+    border: 1px solid var(--color-grey);
+    border-radius: 25%;
+    padding:1px 4px ;
+    font-size: 12px;
+}
+.card3 a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.card4 li{
+    list-style-type: none;
+}
+
+.card4 img{
+    height: 32px;
+    width: 32px;
+}
+
+h2{
+    padding: 7px 0;
+}
+
+.h1,
+.h2{
+    color: var(--color-black);
+}
+
+/* Right part of the body */
+.body_right{
+    flex-basis: 70%;
+    margin-top: 11px;
+    color: var(--color-rightbody-textgrey);
+}
+
+.body_right svg{
+    fill: var(--color-rightbody-textgrey);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.find{
+    width: 900px;
+    padding: 6px 4px;
+    border: 1px solid var(--color-lightgrey);
+    border-radius: 5px;
+    /* margin-top: 9px ; */
+}
+
+.body_right input{
+    margin-bottom: 11px;
+}
+
+.repository_no{
+    margin: 9px 0px;
+    display: block;
+}
+
+.repository__no--line{
+    width: 250px;
+}
+
+.repository__one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid var(--color-lightgrey);
+    padding-bottom: 20px;
+    align-items: flex-start;
+}
+
+.repo__list{
+    display:flex;
+}
+
+.repo__list li{
+    margin-right: 10px;
+}
+
+.details{
+    width:70%;
+}
+
+.details ul{
+    list-style-type: none;
+    display: flex;
+    margin: 10px 0;
+}
+
+.unordered-list li{
+    margin: 10px 0;
+}
+
+.details li{
+    margin-right: 15px;
+}
+
+.card{
+    padding-top: 30px;
+}
+
+.details h3{
+    color: var(--color-textlink);
+}
+.repo__name{
+    color: var(--color-textlink);
+    font-size: 20px;
+}
+
+.repository__one button{
+    padding: 5px;
+    border: 1px solid var(--color-lightgrey);
+    border-radius: 5px;
+}
+
+.star svg,
+.card2 svg, 
+.card1 svg, 
+.card3 svg{
+    padding-top: 3px;
+}
+.header_wrapper svg,
+.star svg,
+.card2 svg, 
+.card1 svg, 
+.card3 svg{
+    fill: #6a737d;
+}
+
+.lang-color{
+    background-color: rgb(196, 47, 47) ;
+    border-radius: 50%;
+    width:10px;
+    display: flex;
+    /* position: relative; */
+    height:10px;
+    border:none;
+margin-right: 8px;
+}
+
+.inline-flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+.repo_description{
+    display: flex;
+    margin: 11px 0;
+}
+
+.repo__status{
+    display: flex;
+}
+
+/* .fixed-top {
+    position: fixed;
+    
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  } */
+
+   .navbar-shrink{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: pink;
+  }
+
+ footer{
+     display: flex;
+     font-size: 12px;
+     border-top: 1px solid var(--color-lightgrey);
+     padding: 40px 15px;
+     /* color: var(--color-textlink) */
+    
+ }
+
+ footer a{
+     text-decoration: none;
+     margin-right: 8px; 
+     color: var(--color-textlink);
+     margin: 0 auto;
+ }
+
+/* Mobile */
+@media (max-width:767.9px){
+    .mobilenav { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav{
+        display: block;
+    }
+    
+    .tired{
+        position: relative;
+        display: flex;
+       
+    }
+
+    .nav__right, .nav__left, .body_left{
+        display: none;
+    }
+    
+    .container1{
+        display: flex;
+    }
+
+    .octicon-three-bars, .octicon-bell{
+        fill:white;
+    }
+
+    
+
+    .container{
+        padding: 0 15px;
+    }
+    .bio-status img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .fullname{
+        font-size: 26px;
+        line-height: 1.25;
+        font-weight: 600;
+    }
+
+    h1{
+        margin-bottom: 12px;
+    }
+
+    .username{
+        font-size: 20px;
+
+    }
+
+    .bio-status{
+        display: block;
+        margin: 7px auto;
+        width: auto;
+        padding: 0px 15px;
+        color: var(--color-black);
+        fill: var(--color-black);
+    }
+
+    .bio-status input{
+        margin: 5px 0px;
+    }
+
+    .bio-status button{
+        padding: 0.5em 8em;
+        font-size: 12px;
+        border: 1px solid var(--color-grey);
+        height: 33px;
+        width: 288px;
+        margin-bottom: 9px;
+    }
+    
+    .bio-status li{
+        list-style-type: none;
+        display: flex;
+        font-size: 14px;
+    }
+    
+    .octicon-mail{
+        margin:0 4px;
+    }
+    
+    .set, 
+    .bio-status button, 
+    .find{
+        padding: 0.5em 1em;
+        border-radius: 5px;
+
+    }
+
+    .set, .find{
+        width: 288px;
+    }
+
+    .set{
+        font-size: 14px;
+        border: 1px solid var(--color-lightgrey);
+        margin-bottom: 9px;
+        background-color: white;
+    }
+
+    .set svg{
+        padding-top: 3px;
+    }
+
+    .unordered-list{
+        margin-right: 12px;
+    }
+
+    .header{
+        overflow-x: scroll;
+    }
+
+    .header_wrapper svg{
+        display: none;
+    }
+    
+    .find{
+        border: 1px solid var(--color-lightgrey);
+    }
+
+    .details{
+        font-size: 14px;
+    }
+
+    .details li{
+        font-size: 12px;
+    }
+
+    .repo__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer{
+        display: flex;
+        font-size: 12px;
+        flex-wrap: wrap;
+
+    }
+   
+    footer a{
+        text-decoration: none;
+        margin-right: 16px;
+    }
+
+    footer p{
+        display: flex;
+    }
+   
+}
+
